@@ -1,4 +1,4 @@
 # landing-page-tech-makers
-## alterando o reanme
+## alterando o readme
 ## teste
-##testando
+## testando
