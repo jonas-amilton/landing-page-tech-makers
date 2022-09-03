@@ -1,0 +1,26 @@
+body{
+    background-color: #eeeeee;
+}
+header{
+    background-color: #3f2140;
+}
+.layout{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+nav{
+    position: absolute;
+    top: 40px;
+    right: 0;   
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;    
+}
+nav li a{
+    text-decoration: none;
+    color: #211366;
+
+}
