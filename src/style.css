@@ -11,6 +11,9 @@ body{
 header{
     background-color: #3f2140;
 }
+.post{
+    color: #000;
+}
 .layout{
     position: relative;
     width: 1200px;
