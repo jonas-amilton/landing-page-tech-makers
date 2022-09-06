@@ -148,9 +148,11 @@ footer{
     font-weight: 500;
     cursor: pointer;
     transition: .3s;
+    font-style: bold;
+    color: white;
 }
 .right form .btn button:hover{
-    background: #000;
+    background: #bbbbbb;
 }
 .bottom .center{
     padding: 5px;
