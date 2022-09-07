@@ -1,188 +1,171 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #d9d9d9;
-    font-family: 'Liberation Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+/*achei mais facil declarar variaveis com as cores*/
+:root{
+    --purple:#741694;
+    --white:#fff;
+    --dark:#1e1c2a;
+    --pink:#e11584;
 }
 body{
-    background-color: #eeeeee;
+    color: var(--dark);
+    background: var(--white);
 }
-header{
-    background-color: #3f2140;
-}
-.post{
-    color: #000;
-}
-.layout{
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 15px 0;
-}
-nav{
-    position: absolute;
-    top: 40px;
-    right: 0;
-}
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-nav li a{
-    text-decoration: none;
-    color: #211366;
-
-}
-footer{
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    background: #111;
-}
-.main-content{
+.navigation{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem var(--pink);
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
 }
-.main-content .box{
-    flex-basis: 50%;
-    padding: 10px 20px;
-}
-.box h2{
-    font-size: 18px;
+.navigation .logo{
+    color: var(--purple);
+    font-size: 1.7rem;
     font-weight: 600;
-    text-transform: uppercase;
 }
-.box .content{
-    margin: 20px 0 0 0;
-    position: relative;
+.logo span{
+    color: var(--dark);
+    width: 24px;
 }
-.box .content:after{
-    position: absolute;
-    content: '';
-    width: 15%;
-    height: 2px;
-    background: #5d1770;
-    top: -10px;
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
 }
-.box .content:before{
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 100%;
-    background: #7d7784;
-    top: -10px;
-}
-.left .content .social{
-    margin: 20px 0 0 0;
-}
-.left .content .social a{
-    padding: 0 2px;
-}
-.left .content .social a span{
-    width: 40px;
-    height: 40px;
-    background: #1a1a1a;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: 0.3s;
-}
-.left .content .social a span:hover{
-    background: #5d1770;
-    ;
-}
-.left .content p{
-    text-align: justify;
-}
-.center .content .fas{
-    font-size: 23px;
-    background: #686270;
-    width: 45px;
-    height: 45px ;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    cursor: pointer;
-}
-.center .content .fas:hover{
-    background: #5d1770;
-    ;
-}
-.center .content .text{
+.navigation ul li a{
+    color: var(--dark);
     font-size: 17px;
     font-weight: 500;
-    padding-left: 10px;
+    transition: all 0.5s;
 }
-.center .content .phone{
-    margin: 10px 0;
+.navigation ul li a:hover{
+    color: var(--purple);
 }
-.center .content .msg{
-    margin-top: 10px;
-}
-.right form input, .right form textarea{
-    width: 100%;
-    font-size: 17px;
-    background: #151515;
-    padding-left: 10px;
-    border: 1px solid #222222;
-}
-.right form input{
-    height: 35px;
-}
-.right form input:focus,
-.right form textarea:focus{
-    outline-color: #3498db;
-}
-.right form .text{
-    font-size: 17px;
-    margin-bottom: 2px;
-    color: #656565;
-}
-.right form .btn{
-    margin-top: 10px;
-}
-.right form .btn button{
-    height: 40px;
-    width: 100%;
-    background: #5d1770;
-    font-size: 17px;
-    font-weight: 500;
+.navigation i{
     cursor: pointer;
-    transition: .3s;
-    font-style: bold;
-    color: white;
+    font-size: 1.5rem;
 }
-.right form .btn button:hover{
-    background: #3b3266;
+.menu{
+    cursor: pointer;
+    display: none;
 }
-.bottom .center{
-    padding: 5px;
-    font-size: 15px;
-    background: #151515;
-    text-align: center;
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
 }
-.bottom .center span{
-    color: #656565;
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--purple);
 }
-.bottom .center a{
-    color: #222A59;
-    text-decoration: none;
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
 }
-.bottom .center a:hover{
-    text-decoration: underline;
+.home-text{
+    max-width: 37rem;
 }
-@media screen and (max-width: 900px){
-    footer{
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: var(--purple);
+    margin-bottom: 1rem;
+}
+.home-text .text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+.home-text p{
+    margin-bottom: 4rem;
+}
+.home-btn{
+    padding: 15px 45px;
+    background: var(--purple);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.home-btn:hover{
+    background: var(--pink);
+}
+.home-video {
+    width: 100%;
+}
+@media (max-width:785px) {
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
         position: fixed;
-        bottom: 0px;
-    }
-    .main-content{
-        flex-wrap: wrap;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
         flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
     }
-    .main-content .box{
-        margin: 5px 0;
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+
+
+    /*a partir daqui é o main*/
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text-h4{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home-img{
+        width: 125%;
     }
 }
