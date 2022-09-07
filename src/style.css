@@ -19,61 +19,43 @@ body{
     color: var(--dark);
     background: var(--white);
 }
+
+/*barra de navegação*/
 .navigation{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    box-shadow: 0 0.1rem 0.5rem var(--pink);
+    box-shadow: 0 0.1rem 0.5rem var(--purple);
     width: 100%;
-    background: var(--white);
+    background: var(--dark);
     transition: all 0.5s;
     position: fixed;
 }
+/*logo da razor*/
 .navigation .logo{
-    color: var(--purple);
+    color: var(--white);
     font-size: 1.7rem;
     font-weight: 600;
-}
-.logo span{
-    color: var(--dark);
-    width: 24px;
 }
 .navigation ul{
     display: flex;
     align-items: center;
     gap: 5rem;
 }
+/*cor da opcoes clicaveis dos menus*/
 .navigation ul li a{
-    color: var(--dark);
-    font-size: 17px;
+    color: var(--white);
+    font-size: 20px;
     font-weight: 500;
     transition: all 0.5s;
 }
+/*efeito de mudança de cor quando passa o mouse nas opcoes clicaveis do menu*/
 .navigation ul li a:hover{
-    color: var(--purple);
+    color: var(--pink);
 }
-.navigation i{
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-.menu{
-    cursor: pointer;
-    display: none;
-}
-.menu .bar{
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 3px;
-    background: var(--dark);
-    margin: 5px auto;
-    transition: all 0.3s;
-}
-.menu .bar:nth-child(1),
-.menu .bar:nth-child(3){
-    background: var(--purple);
-}
+
+/*organizacao do home com botao e textos*/
 .home{
     width: 100%;
     height: 100vh;
@@ -85,6 +67,7 @@ body{
 .home-text{
     max-width: 37rem;
 }
+/*titulo, subtitulo e paragrafo*/
 .home-text .text-h4{
     font-size: 1.5rem;
     color: var(--purple);
@@ -98,6 +81,7 @@ body{
 .home-text p{
     margin-bottom: 4rem;
 }
+/*botao de escolha da maquina*/
 .home-btn{
     padding: 15px 45px;
     background: var(--purple);
@@ -106,66 +90,7 @@ body{
     font-weight: 700;
     transition: all 0.5s;
 }
+/*cor do botao quando passa o mouse*/
 .home-btn:hover{
     background: var(--pink);
-}
-.home-video {
-    width: 100%;
-}
-@media (max-width:785px) {
-    .navigation{
-        padding: 18px 20px;
-    }
-    .menu{
-        display: block;
-    }
-    .menu.ativo .bar:nth-child(1){
-        transform:  translateY(8px) rotate(45deg);
-    }
-    .menu.ativo .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .menu.ativo .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu{
-        position: fixed;
-        right: -100%;
-        top: 70px;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        background: var(--white);
-        gap: -10px;
-        transition: 0.3s;
-    }
-    .nav-menu.ativo{
-        right: 0;
-    }
-    .nav-item{
-        margin: 16px 0;
-    }
-
-
-    /*a partir daqui é o main*/
-    .home{
-        padding: 100px 2%;
-        flex-direction: column;
-        text-align: center;
-        overflow: hidden;
-        gap: 5rem;
-    }
-    .home .text-h4{
-        font-size: 15px;
-    }
-    .home .text-h1{
-        font-size: 2.5rem;
-        line-height: 3rem;
-    }
-    .home p{
-        font-size: 15px;
-    }
-    .home-img{
-        width: 125%;
-    }
 }
