@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,20 +8,22 @@
     list-style: none;
     text-decoration: none;
 }
+
 /*achei mais facil declarar variaveis com as cores*/
-:root{
-    --purple:#741694;
-    --white:#fff;
-    --dark:#1e1c2a;
-    --pink:#e11584;
+:root {
+    --purple: #741694;
+    --white: #fff;
+    --dark: #1e1c2a;
+    --pink: #e11584;
 }
-body{
+
+body {
     color: var(--dark);
     background: var(--white);
 }
 
 /*barra de navegação*/
-.navigation{
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,32 +34,36 @@ body{
     transition: all 0.5s;
     position: fixed;
 }
+
 /*logo da razor*/
-.navigation .logo{
+.navigation .logo {
     color: var(--white);
     font-size: 1.7rem;
     font-weight: 600;
 }
-.navigation ul{
+
+.navigation ul {
     display: flex;
     align-items: center;
     gap: 5rem;
 }
+
 /*cor da opcoes clicaveis dos menus*/
-.navigation ul li a{
+.navigation ul li a {
     color: var(--white);
     font-size: 20px;
     font-weight: 500;
     transition: all 0.5s;
 }
+
 /*efeito de mudança de cor quando passa o mouse nas opcoes clicaveis do menu*/
-.navigation ul li a:hover{
+.navigation ul li a:hover {
     color: var(--pink);
 }
 
 /*aqui começa o main
 organizacao do home com botao e textos*/
-.home{
+.home {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -65,25 +71,30 @@ organizacao do home com botao e textos*/
     justify-content: space-between;
     padding: 0px 10%;
 }
-.home-text{
+
+.home-text {
     max-width: 37rem;
 }
+
 /*titulo, subtitulo e paragrafo*/
-.home-text .text-h4{
+.home-text .text-h4 {
     font-size: 1.5rem;
     color: var(--purple);
     margin-bottom: 1rem;
 }
-.home-text .text-h1{
+
+.home-text .text-h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 4rem;
 }
-.home-text p{
+
+.home-text p {
     margin-bottom: 4rem;
 }
+
 /*botao de escolha da maquina*/
-.home-btn{
+.home-btn {
     padding: 15px 45px;
     background: var(--purple);
     color: var(--white);
@@ -91,7 +102,15 @@ organizacao do home com botao e textos*/
     font-weight: 700;
     transition: all 0.5s;
 }
+
 /*cor do botao quando passa o mouse*/
-.home-btn:hover{
+.home-btn:hover {
     background: var(--pink);
+}
+
+/*footer começa aqui*/
+footer,
+img {
+    border-radius: 50%;
+    width: 150px;
 }
