@@ -4,9 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*achei mais facil declarar variaveis com as cores*/
@@ -18,46 +17,106 @@
 }
 
 body {
-    color: var(--dark);
-    background: var(--white);
+    font-size: 100%;
+    background: var(--dark);
+}
+
+/*logo*/
+.logo {
+    height: 72px;
 }
 
 /*barra de navegação*/
-.navigation {
+.navi-menu {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 40px;
-    box-shadow: 0 0.1rem 0.5rem var(--purple);
-    width: 100%;
-    background: var(--dark);
-    transition: all 0.5s;
-    position: fixed;
+    gap: 32px;
 }
 
-/*logo da razor*/
-.navigation .logo {
+.menu-item {
+    font-family: 'Poppins', sans-serif;
     color: var(--white);
-    font-size: 1.7rem;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 18px
 }
 
-.navigation ul {
+.principal {
+    margin-bottom: 48px;
+    border-top: 0.4px solid --white;
+}
+
+.home {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 5rem;
+    justify-content: space-around;
 }
 
-/*cor da opcoes clicaveis dos menus*/
-.navigation ul li a {
+.text-h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
     color: var(--white);
-    font-size: 20px;
-    font-weight: 500;
-    transition: all 0.5s;
+}
+
+.text-h1 {
+    font-family: 'Poppins', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: var(--white);
+}
+
+p{
+   color: var(--white);
+}
+
+.home-btn {
+    background-color: var(--purple);
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px (--dark);
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--dark);
+}
+
+.home-btn:hover {
+    background-color: var(--pink);
+}
+
+.banner-video {
+    width: 500px;
+}
+
+.secondary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.title-secondary {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Poppins', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2EF;
+    margin-bottom: 16px;
+}
+
+.paragraph-secondary {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
 }
 
 /*efeito de mudança de cor quando passa o mouse nas opcoes clicaveis do menu*/
-.navigation ul li a:hover {
+.menu-item:hover {
     color: var(--pink);
 }
 
@@ -103,14 +162,21 @@ organizacao do home com botao e textos*/
     transition: all 0.5s;
 }
 
-/*cor do botao quando passa o mouse*/
+/*efeito de mudança de cor quando passa o mouse nas opcoes clicaveis do menu*/
 .home-btn:hover {
     background: var(--pink);
 }
 
 /*footer começa aqui*/
-footer,
-img {
+.footer {
+    padding: 32px;
+    border-top: 0.4px solid --white;
+}
+
+.footer-img {
     border-radius: 50%;
     width: 150px;
+}
+.copyright{
+    color: var(--purple);
 }

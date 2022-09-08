@@ -16,20 +16,16 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navigation">
-            <a href="#" class="logo">Razor Workstations</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#">Computadores</a></li>
-                <li class="nav-item"><a href="#">Suporte</a></li>
-                <li class="nav-item"><a href="#">Carrinho</a></li>
-                <i class='bx bx-search'></i>
-            </ul>
-
-        </nav>
+    <header class="navigation">
+        <a href="#" class="logo" src="assets/logo.png"><!--logo ainda não carrega-->
+            <nav class="navi-menu">
+                <a class="menu-item" href="#">Computadores</a>
+                <a class="menu-item" href="#">Suporte</a>
+                <a class="menu-item" href="#">Carrinho</a>
+            </nav>
     </header>
 
-    <main>
+    <main class="principal">
         <section class="home">
             <div class="home-text">
                 <h4 class="text-h4">Menos RGB, mais performance</h4>
@@ -37,18 +33,23 @@
                 <p>ARQUITETURA & CONSTRUÇÃO, ENGENHARIA & FABRICAÇÃO, INDÚSTRIA CRIATIVA, PESQUISA & CIÊNCIA</p>
                 <a href="#" class="home-btn">ESCOLHER MINHA MÁQUINA</a>
             </div>
-            <div class="home-video">
-                <video src="assets/banner-video.mp4" width="500" controls></video>>
-            </div>
+            <video class="banner-video" src="assets/banner-video.mp4" controls></video>>
+        </section>
+
+        <section class="secondary">
+            <h3 class="title-secondary">Desempenho de maçã a preço de banana</h3>
+            <p class="paragraph-secondary">Suporte nacional e garantia de dar inveja</p>
+            <p class="paragraph-secondary">As workstations que não tem medo de pegar no pesado</p>
+            <p class="paragraph-secondary">Chip gráfico que não arrega para o seu render</p>
         </section>
     </main>
 
-    <footer>
-            <img src="assets/jonas.jfif" alt="foto jonas silva">
-            <img src="assets/joao.jfif" alt="foto joão henrique bergalho">
-            <img src="assets/erik.jfif" alt="foto erik esperidiao">
-            <img src="assets/mariane.jfif" alt="foto mariane silva">
-        <!--<p class="copyright">&copy; Criado por tech-makers - 2022</p>-->
+    <footer class="footer">
+        <img class="footer-img" src="assets/jonas.jfif" alt="foto jonas silva">
+        <img class="footer-img" src="assets/joao.jfif" alt="foto joão henrique bergalho">
+        <img class="footer-img" src="assets/erik.jfif" alt="foto erik esperidiao">
+        <img class="footer-img" src="assets/mariane.jfif" alt="foto mariane silva">
+        <p class="copyright">&copy; Criado por tech-makers - 2022</p>
     </footer>
 
 
