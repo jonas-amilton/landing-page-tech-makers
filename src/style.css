@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*achei mais facil declarar variaveis com as cores*/
@@ -20,23 +21,28 @@ body {
     background: var(--dark);
 }
 
-.navigation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 24px;
+.navigation{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
 }
-
 /*logo*/
 .logo {
+   
     height: 32px;
+    margin: 20px;
 }
 
 /*barra de navegação*/
 .navi-menu {
-    display: flex;
-    gap: 32px;
+    position: absolute;
+    top: 20px;
+    right: 0
+    
+}
+.navi-menu a{
+    margin:0 0 0 15px;
 }
 
 .menu-item {
@@ -72,8 +78,8 @@ body {
     color: var(--white);
 }
 
-p {
-    color: var(--white);
+p{
+   color: var(--white);
 }
 
 .home-btn {
@@ -97,7 +103,7 @@ p {
     width: 500px;
 }
 
-.secondary {
+.secondary{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,9 +188,8 @@ organizacao do home com botao e textos*/
 
 .footer-img {
     border-radius: 50%;
-    width: 150px;
+    width: 200px;
 }
-
-.copyright {
+.copyright{
     color: var(--purple);
 }
