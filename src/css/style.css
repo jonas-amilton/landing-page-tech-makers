@@ -202,3 +202,34 @@ organizacao do home com botao e textos*/
     border-radius: 50%;
     width: 200px;
 }
+.caixa{
+    margin: 0 0 0 130px;
+     
+}
+.form{
+    background-color: var(--purple);
+    width: 80%;
+    padding: 40px;  
+}
+label{
+    color: white;
+    display: block;
+    font-size: 20px;
+}
+.input-padrao{
+    display: block;
+	margin: 0 0 20px;
+	padding: 5px 10px;
+	width: 50%;
+    text-align: center;
+    border-radius: 5px;
+}
+.checkbox{
+    display: inline;
+}
+.botao{
+    color: white;
+    background-color: var(--yellow);
+    width: 40%;
+    border-radius: 5px;
+}
