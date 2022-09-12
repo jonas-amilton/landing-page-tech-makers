@@ -105,6 +105,7 @@ p {
 
 .home-btn:hover {
     background-color: var(--pink);
+    cursor: pointer;
 }
 
 .banner-video {
@@ -149,6 +150,7 @@ p {
 /*efeito de mudança de cor quando passa o mouse nas opcoes clicaveis do menu*/
 .menu-item:hover {
     color: var(--pink);
+    cursor: pointer;
 }
 
 /*aqui começa o main
@@ -208,6 +210,9 @@ organizacao do home com botao e textos*/
     border-radius: 50%;
     width: 200px;
 }
+#link{
+    padding: 0 0 100px 0;
+}
 .caixa{
     margin: 0 0 0 130px;
      
@@ -236,7 +241,7 @@ label{
 }
 .botao{
     background-color: var(--yellow);
-    color: var(--pink);
+    color: var(--purple);
     width: 40%;
     border-radius: 5px;
     font-weight: bold;
@@ -244,5 +249,8 @@ label{
     transition: 0.5s;
 }
 .botao:hover{
+    color: var(--pink);
+    background-color: rgb(255, 187, 0);
     transform: scale(1.1);
+    cursor: pointer;
 }
