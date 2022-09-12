@@ -7,6 +7,9 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /*achei mais facil declarar variaveis com as cores*/
 :root {
@@ -213,9 +216,10 @@ organizacao do home com botao e textos*/
     background-color: var(--purple);
     width: 80%;
     padding: 40px;  
+    border-radius: 5px;
 }
 label{
-    color: white;
+    color: var(--white);
     display: block;
     font-size: 20px;
 }
@@ -231,8 +235,14 @@ label{
     display: inline;
 }
 .botao{
-    color: white;
     background-color: var(--yellow);
+    color: var(--pink);
     width: 40%;
     border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    transition: 0.5s;
+}
+.botao:hover{
+    transform: scale(1.1);
 }
