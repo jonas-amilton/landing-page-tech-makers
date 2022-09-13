@@ -268,3 +268,11 @@ label{
     transform: scale(1.1);
     cursor: pointer;
 }
+
+.voltar-topo {
+    text-align: right;
+    color: var(--white);
+}
+.voltar-topo:hover {
+    color: var(--yellow);
+}
