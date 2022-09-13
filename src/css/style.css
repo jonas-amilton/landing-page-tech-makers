@@ -7,6 +7,9 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /*achei mais facil declarar variaveis com as cores*/
 :root {
@@ -103,6 +106,7 @@ p {
 
 .home-btn:hover {
     background-color: var(--pink);
+    cursor: pointer;
 }
 
 .banner-video {
@@ -147,6 +151,7 @@ p {
 /*efeito de mudança de cor quando passa o mouse nas opcoes clicaveis do menu*/
 .menu-item:hover {
     color: var(--pink);
+    cursor: pointer;
 }
 
 /*aqui começa o main
@@ -206,6 +211,9 @@ organizacao do home com botao e textos*/
     border-radius: 50%;
     width: 200px;
 }
+#link{
+    padding: 0 0 100px 0;
+}
 .caixa{
     margin: 0 0 0 130px;
      
@@ -214,13 +222,14 @@ organizacao do home com botao e textos*/
     background-color: var(--purple);
     width: 80%;
     padding: 40px;  
+    border-radius: 5px;
 }
 h3 {
     color: var(--yellow);
     text-align: center;
 }
 label{
-    color: white;
+    color: var(--white);
     display: block;
     font-size: 20px;
 }
@@ -245,8 +254,17 @@ label{
     display: inline;
 }
 .botao{
-    color: white;
     background-color: var(--yellow);
+    color: var(--purple);
     width: 40%;
     border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    transition: 0.5s;
+}
+.botao:hover{
+    color: var(--pink);
+    background-color: rgb(255, 187, 0);
+    transform: scale(1.1);
+    cursor: pointer;
 }
