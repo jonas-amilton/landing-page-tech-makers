@@ -16,6 +16,7 @@
     --pink: #e11584;
     --yellow: #fec63e;
     --black: #000000;
+    --red: #ff0000;
 }
 
 body {
@@ -185,7 +186,7 @@ organizacao do home com botao e textos*/
     padding: 15px 45px;
     background: var(--purple);
     color: var(--white);
-    border-radius: 10px;
+    border-radius: 50px;
     font-weight: 700;
     transition: all 0.5s;
 }
@@ -214,11 +215,24 @@ organizacao do home com botao e textos*/
     width: 80%;
     padding: 40px;  
 }
+h3 {
+    color: var(--yellow);
+    text-align: center;
+}
 label{
     color: white;
     display: block;
     font-size: 20px;
 }
+
+.span-required {
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: var(--red);
+    display: none;
+
+}
+
 .input-padrao{
     display: block;
 	margin: 0 0 20px;

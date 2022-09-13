@@ -67,11 +67,18 @@
         </section >
 
 		<div class="caixa" >
-			<form class="form" >
-				<label>Nome completo<input type="text" required class="input-padrao" id="form"></label>
-				<label>Email<input type="email" required class="input-padrao"></label>
-				<label>Telefone<input type="tel" required class="input-padrao" placeholder="(xx)x xxxx-xxxx"></label>
-				<label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades pelo email ?</label>
+			<form id="form-js" class="form" >
+                <h3>Entrar em contato</h3>
+				<label>Nome completo<input type="text" class="input-padrao required" oninput="nameValidate()" id="form"></label>
+				<span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+
+                <label>Email<input type="email" class="input-padrao required" oninput="emailValidate()"></label>
+                <span class="span-required">Digite um e-mail válido</span>
+
+				<label>Telefone<input type="tel" class="input-padrao required" oninput="numberValidate()" placeholder="(xx)x xxxx-xxxx"></label>
+				<span class="span-required">Número de Telefone deve ter 11 digitos</span>
+
+                <label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades pelo email ?</label>
 				<input type="submit" value="Enviar" class="botao">				
 			</form>
         </div>
