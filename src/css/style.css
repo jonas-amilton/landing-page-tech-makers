@@ -150,7 +150,7 @@ p {
 
 /*efeito de mudança de cor quando passa o mouse nas opcoes clicaveis do menu*/
 .menu-item:hover {
-    color: var(--pink);
+    color: var(--yellow);
     cursor: pointer;
 }
 
